@@ -1,14 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap');
 
-* {
-    font-family: 
-}
 
-.connect-container {
-    display: flex; 
-    background-color: pink;
-}
 
 h1, h2, h3 {
     font-family: Montserrat;
@@ -18,7 +11,39 @@ p {
     font-family: "PT Serif";
     font-style: italic;
 }
-
-.projects-container {
-    display: flex;
+h1 {
+    font-weight: 600;
 }
+
+.nav-link {
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+
+}
+
+.nav-link:hover {
+    text-decoration: underline solid black;
+    color: black;
+}
+
+nav {
+    width: 100%;
+    background-color: pink;
+}
+
+main {
+    padding-top: 100px;
+    background-color: purple;
+}
+
+#about {
+}
+
+#projects {
+    background-color: pink;
+}
+
+.container-sm {
+}
+

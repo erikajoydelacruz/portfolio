@@ -10,57 +10,76 @@
     </head>
     <body>
         <header>
-            <div class="circle"></div>
-            <nav>
-                <a href="#">About</a>
-                <a href="#">Projects</a>
-                <a href="#">Connect</a>
+            <nav class="nav justify-content-center fixed-top">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#connect">Connect</a>
             </nav>
         </header>
         <main>
-            <div class="intro">
-                <h1>Hi there!</h1>
+            <div class="container-sm" id="about">
+                <h1 class="display-1">Hi there!</h1>
                 <p>I'm Erika Joy. I'm from the San Francisco Bay Area and I'm a front-end web developer.</p>
                 <button>See More</button>
             </div>
-            <div class="container-md">
+            <div class="container-sm" id="projects">
                 <h1>Things I've Done</h1>
-                <div class="projects-column">
-                    <h3>Web-App Dashboard</h3>
-                    <p>This Web-App Dashboard is an interactive dashboard that includes SVG graphics and JavaScript to create tables, charts, graphics, and other interactive user interface components.</p>
-                    <button>See More</button>
-                </div>
-                <div class="projects-column">
-                    <h3>Registration Form</h3>
-                    <p>This registration form is responsive and uses a variety of different form elements.</p>
-                    <button>See More</button>
-                </div>
-                <div class="projects-column">
-                    <h3>Employee Directory</h3>
-                    <p>This employee directory uses JavaScript to communicate with a third-party API and CSS to create a modal window.</p>
-                    <button>See More</button>
+                <div class="row align-items-start">
+                    <div class="col-sm">
+                        <img src="img/dashboard.png" class="img-thumbnail">
+                        <h3>Web-App Dashboard</h3>
+                        <p>This Web-App Dashboard is an interactive dashboard that includes SVG graphics and JavaScript to create tables, charts, graphics, and other interactive user interface components.</p>
+                        <button>See More</button>
+                    </div>
+                    <div class="col-sm">
+                        <img src="img/form.png" class="img-thumbnail">
+                        <h3>Registration Form</h3>
+                        <p>This registration form is responsive and uses a variety of different form elements.</p>
+                        <button>See More</button>
+                    </div>
+                    <div class="col-sm">
+                        <img src="img/directory.png" class="img-thumbnail">
+                        <h3>Employee Directory</h3>
+                        <p>This employee directory uses JavaScript to communicate with a third-party API and CSS to create a modal window.</p>
+                        <button>See More</button>
+                    </div>
                 </div>
             </div>
-            <div class="connect-container">
+            <div class="container-sm" id="connect">
                 <h1>Let's Connect!</h1>
-                <div class="social-link">
-                    <img src="img/linkedin.svg">
-                    <h3>LinkedIn</h3>
+                <div class="row align-items-start">
+                    <div class="col">
+                        <div class="social-link">
+                            <a href="https://www.linkedin.com/in/erikajoydelacruz/" target="_blank">
+                                <img src="img/linkedin.svg">
+                            </a>
+                            <h3>LinkedIn</h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="social-link">
+                            <a href="https://github.com/erikajoydelacruz" target="_blank">
+                                <img src="img/github.svg">
+                            </a>
+                            <h3>GitHub</h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="social-link">
+                            <img src="img/email.svg">
+                            <h3>Email</h3>
+                        </div>
+                    </div>
                 </div>
-                <div class="social-link">
-                    <img src="img/github.svg">
-                    <h3>GitHub</h3>
-                </div>
-                <div class="social-link">
-                    <img src="img/email.svg">
-                    <h3>Email</h3>
-                </div>
-                <div class="message">
-                    <input type="text" placeholder="Your Email" class="form-field" id="userField">
-                    <textarea placeholder="Leave me a message" class="form-area" id="messageField"></textarea>
-                    <button class="button-primary" id="send">Send</button>
-                </div>
-            </div>
+                <div class="mb-3">
+                    <label for="senderEmail" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="senderEmail" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="leaveMessage" class="form-label">Leave me a message!</label>
+                    <textarea class="form-control" id="leaveMessage" rows="3"></textarea>
+                    <button type="submit">Submit</button>
+                  </div>
         </main>
         <footer>
 

@@ -10,80 +10,100 @@
     </head>
     <body>
         <header>
-            <nav class="nav justify-content-center fixed-top">
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#projects">Projects</a>
-                <a class="nav-link" href="#connect">Connect</a>
+            <nav class="navbar justify-content-start fixed-top container-fluid">
+                <a class="navbar-brand">erika joy</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#connect" class="nav-link">Connect</a>
             </nav>
+
+            <div class="intro">
+                <h1 class="display-1">Hello World!</h1>
+                <h6 class="display-6">I'm Erika Joy.</h6>
+            </div>
         </header>
         <main>
-            <div class="container-sm" id="about">
-                <h1 class="display-1">Hi there!</h1>
-                <p>I'm Erika Joy. I'm from the San Francisco Bay Area and I'm a front-end web developer.</p>
-                <button>See More</button>
+            <div class="container-lg text-center" id="about">
+                <h3>About Me</h3>
+                <p>Hey, what's up? I'm a front-end developer with experience in HTML5, CSS3, and JavaScript. In high school, 
+                    I was taught the Adobe Creative suite, creating mockups in Illustrator and Photoshop, then collaborating with
+                    my peers that were learning HTML and CSS to create static websites.
+                </p>
+                <p>I graduated from college in 2020, just as lockdowns were becoming enforced. Though it wasn't the exciting 
+                    graduation that I was always looking forward to (my tentative graduation day was the day of my birthday!),
+                    I used my free time to learn a new skill – web development. I spent months looking up YouTube videos, tutorials, 
+                    and free online classes, discovering and soaking up all the content I could. Once I felt like I knew this is what
+                    I wanted to do, I signed up for the Treehouse Techdegree.
+                </p>
+                <p>Now, I'm ready for my next chapter.</p>
             </div>
-            <div class="container-sm" id="projects">
-                <h1>Things I've Done</h1>
+            <div class="container-fluid" id="projects">
+                <h3 class="text-center">Projects I've Worked On</h3>
                 <div class="row align-items-start">
-                    <div class="col-sm">
-                        <img src="img/dashboard.png" class="img-thumbnail">
-                        <h3>Web-App Dashboard</h3>
-                        <p>This Web-App Dashboard is an interactive dashboard that includes SVG graphics and JavaScript to create tables, charts, graphics, and other interactive user interface components.</p>
-                        <button>See More</button>
-                    </div>
-                    <div class="col-sm">
+                    <div class="col-sm" id="work">
                         <img src="img/form.png" class="img-thumbnail">
-                        <h3>Registration Form</h3>
-                        <p>This registration form is responsive and uses a variety of different form elements.</p>
-                        <button>See More</button>
+                        <h5 class="text-center">Registration Form</h5>
+                        <!--<p>This registration form is responsive and uses a variety of different form elements.</p>
+                        <button>See More</button>-->
                     </div>
-                    <div class="col-sm">
+                    <div class="col-sm" id="work">
+                        <img src="img/dash.png" class="img-thumbnail">
+                        <h5 class="text-center">Web Application Dashboard</h5>
+                        <!--<p>This Web-App Dashboard is an interactive dashboard that includes SVG graphics and JavaScript to create tables, charts, graphics, and other interactive user interface components.</p>-
+                        <button>See More</button>-->
+                    </div>
+                    <div class="col-sm" id="work">
                         <img src="img/directory.png" class="img-thumbnail">
-                        <h3>Employee Directory</h3>
-                        <p>This employee directory uses JavaScript to communicate with a third-party API and CSS to create a modal window.</p>
-                        <button>See More</button>
+                        <h5 class="text-center">Employee Directory</h5>
+                        <!--<p>This employee directory uses JavaScript to communicate with a third-party API and CSS to create a modal window.</p>
+                        <button>See More</button>-->
                     </div>
                 </div>
             </div>
-            <div class="container-sm" id="connect">
-                <h1>Let's Connect!</h1>
-                <div class="row align-items-start">
+            <div class="container-fluid text-center" id="skills">
+                <h3>Skills</h3>
+                <p>HTML5, CSS3, JavaScript, Adobe Suite, Figma, Canva</p>
+            </div>
+            <!--
+            <div class="overlay hidden">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-content"></div>
+                </div>
+            </div>
+        -->
+        </main>
+        <footer>
+            <div class="container-fluid" id="connect">
+                <h4>Let's Connect!</h4>
+                <div class="row align-items-start text-center">
                     <div class="col">
                         <div class="social-link">
                             <a href="https://www.linkedin.com/in/erikajoydelacruz/" target="_blank">
-                                <img src="img/linkedin.svg">
+                                <img src="img/linkedin.svg" class="svg" alt="LinkedIn logo">
                             </a>
-                            <h3>LinkedIn</h3>
+                            <p>LinkedIn</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="social-link">
                             <a href="https://github.com/erikajoydelacruz" target="_blank">
-                                <img src="img/github.svg">
+                                <img src="img/github.svg" class="svg" alt="GitHub logo">
                             </a>
-                            <h3>GitHub</h3>
+                            <p>GitHub</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="social-link">
-                            <img src="img/email.svg">
-                            <h3>Email</h3>
+                            <img src="img/email.svg" class="svg" alt="email logo">
+                            <p>Email</p>
                         </div>
                     </div>
                 </div>
-                <div class="mb-3">
-                    <label for="senderEmail" class="form-label">Your Email</label>
-                    <input type="email" class="form-control" id="senderEmail" placeholder="name@example.com">
-                  </div>
-                  <div class="mb-3">
-                    <label for="leaveMessage" class="form-label">Leave me a message!</label>
-                    <textarea class="form-control" id="leaveMessage" rows="3"></textarea>
-                    <button type="submit">Submit</button>
-                  </div>
-        </main>
-        <footer>
-
         </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
     <script src="js/app.js"></script>
     </body>
 </html>

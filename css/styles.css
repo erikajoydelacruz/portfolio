@@ -2,48 +2,168 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap');
 
 
-
-h1, h2, h3 {
+h1, h2, h3,h4, h5, h6 {
     font-family: Montserrat;
 }
 
 p {
     font-family: "PT Serif";
-    font-style: italic;
 }
+
 h1 {
     font-weight: 600;
 }
 
 .nav-link {
-    color: black;
+    color: #999;
     text-transform: uppercase;
     font-size: 14px;
-
 }
 
 .nav-link:hover {
-    text-decoration: underline solid black;
-    color: black;
+    color: #c7af98;
 }
 
-nav {
-    width: 100%;
-    background-color: pink;
+.navbar {
+    background-color: #fff;
+    margin-left: 5px;
 }
 
+.navbar-brand {
+    text-decoration: none;
+    color: #e9ccb1;
+    font-family: "PT Serif";
+}
+
+.navbar-brand:hover {
+    color: #c7af98;
+    cursor: pointer;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h5 {
+    color: white;
+}
 main {
-    padding-top: 100px;
-    background-color: purple;
+    background-color: #fff;
+}
+
+header {
+    padding-top: 63px;
+}
+
+.intro {
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    height:80vh;
+    padding-top: 125px;
+    color: #c7af98;
+    background-color: #999;
+    padding-left: 10px;
 }
 
 #about {
+    height: 40vh;
+    color: #999;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
-
 #projects {
-    background-color: pink;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    height: 70vh;
+    background-color: #c7af98;
+
+}
+#connect {
+    background-color: #c7af98;
+    color: white;
+    padding-top: 10px;
 }
 
-.container-sm {
+.svg {
+    height: 40px;
+    width: 40px;
+    padding-top: 20px;
 }
 
+#connect p {
+    display: none;
+} 
+
+h3 {
+    color: #c7af98;
+}
+
+#projects h3 {
+    padding-bottom: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+#projects h5 {
+    padding-top: 20px;
+}
+
+#skills {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 100, 100, 0.4);
+}
+
+.modal {
+    width: 320px;
+    margin: 15% auto auto;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #778;
+    border-radius: 5px;
+    padding: 30px 20px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-family: Nunito;
+}
+
+
+
+@media (min-width: 768px) {
+
+    /*
+    #connect p {
+        display: block;
+        padding-top: 10px;
+    }
+
+    .svg {
+        height: 50px;
+        width: 50px; 
+        padding: 0;
+    } */
+
+    #work:hover {
+        transform: scale(1.1);
+        z-index: 1;
+        transition: 0.3s ease-in;
+        cursor: pointer;
+    }
+
+    #work {
+        transition: 0.3s ease-out;
+    }
+}

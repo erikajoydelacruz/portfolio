@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap');
 
+/*===========================================
+   BASE STYLES
+============================================*/
 
 h1, h2, h3,h4, h5, h6 {
     font-family: Montserrat;
@@ -8,36 +11,6 @@ h1, h2, h3,h4, h5, h6 {
 
 p {
     font-family: "PT Serif";
-}
-
-h1 {
-    font-weight: 600;
-}
-
-.nav-link {
-    color: #999;
-    text-transform: uppercase;
-    font-size: 14px;
-}
-
-.nav-link:hover {
-    color: #c7af98;
-}
-
-.navbar {
-    background-color: #fff;
-    margin-left: 5px;
-}
-
-.navbar-brand {
-    text-decoration: none;
-    color: #e9ccb1;
-    font-family: "PT Serif";
-}
-
-.navbar-brand:hover {
-    color: #c7af98;
-    cursor: pointer;
 }
 
 h1 {
@@ -55,6 +28,61 @@ header {
     padding-top: 63px;
 }
 
+h3 {
+    color: #c7af98;
+}
+
+/*===========================================
+   NAVBAR
+============================================*/
+
+.nav-link {
+    color: #999;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: #c7af98;
+}
+
+.navbar {
+    background-color: #fff;
+    margin-left: 5px;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    color: #e9ccb1;
+    font-family: "PT Serif";
+}
+
+.navbar-brand:hover{
+    cursor:  default;
+}
+
+.navbar .nav-link {
+    display: none;
+}
+
+.navbar a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.navbar .hamburger {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/*===========================================
+  INTRO
+============================================*/
+
 .intro {
     background-image: url("../img/hero.jpg");
     background-size: cover;
@@ -64,36 +92,25 @@ header {
     background-color: #999;
     padding-left: 10px;
 }
-
+/*===========================================
+   ABOUT
+============================================*/
 #about {
-    height: 40vh;
+    height: 40%;
     color: #999;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
+
+/*===========================================
+   PROJECTS
+============================================*/
+
 #projects {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    height: 70vh;
+    height: 70%;
     background-color: #c7af98;
-
-}
-#connect {
-    background-color: #c7af98;
-    color: white;
-    padding-top: 10px;
-}
-
-.svg {
-    padding-top: 20px;
-}
-
-#connect p {
-    display: none;
-} 
-
-h3 {
-    color: #c7af98;
 }
 
 #projects h3 {
@@ -106,14 +123,42 @@ h3 {
     padding-top: 20px;
 }
 
+/*===========================================
+   SKILLS
+============================================*/
+
 #skills {
     margin-top: 40px;
     margin-bottom: 40px;
+    height: 40%;
 }
 
+
+.credits {
+    font-size: 10px;
+    line-height: 1px;
+    font-style: italic;
+    color: #c7af98;
+    margin-left: 10px;
+}
+
+.credits a {
+    text-decoration: none;
+    color: #999;
+}
+
+
+/*===========================================
+    SVG
+============================================*/
 img.svg {
     height: 100px;
     width: 100px;
+}
+
+.svg {
+    padding-top: 20px;
+    transition: 0.3s ease-out;
 }
 
 .svg:hover {
@@ -122,9 +167,70 @@ img.svg {
     transition: 0.3s ease-in;
 }
 
-.svg {
-    transition: 0.3s ease-out;
+
+/*===========================================
+    CONTACT
+============================================*/
+
+
+#connect {
+    background-color: #c7af98;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
+
+#connect h4 {
+    margin-top: 10px;
+}
+
+
+#connect p {
+    display: none;
+} 
+
+#connect img.svg {
+    height: 50px;
+    width: 50px;
+}
+
+.form-group label {
+    font-family: Montserrat;
+}
+
+.form-group label,
+.form-group input,
+.form-group textarea {
+    margin: 5px;
+}
+
+.socials {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.submit {
+    border-radius: 25px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: white;
+    border: 2px solid white;
+    color: #c7af98;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.submit:hover {
+    background-color: #e9ccb1;
+    color: white;
+    border-color: #e9ccb1;
+    transition: 0.1s ease-in;
+}
+
+/*===========================================
+    MODAL
+============================================*/
 
 .overlay {
     position: fixed; 
@@ -150,9 +256,18 @@ img.svg {
     position: absolute;
     right: 15px;
     top: 5px;
-    font-family: Nunito;
+    font-family: Montserrrat;
 }
 
+
+.modal-content {
+    background-color: #fff;
+    margin: 20% auto;
+}
+
+.hidden {
+    display: none;
+}
 
 
 @media (min-width: 768px) {

@@ -113,6 +113,14 @@ ul {
     padding-top: 20px;
 }
 
+#work p {
+    color: #fff;
+}
+
+#projects .submit {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
 /*===========================================
    SKILLS
 ============================================*/
@@ -314,8 +322,7 @@ img.svg {
         height: 50px;
         width: 50px; 
         padding: 0;
-    } */
-
+    } 
     #work:hover {
         transform: scale(1.1);
         z-index: 1;
@@ -325,5 +332,5 @@ img.svg {
 
     #work {
         transition: 0.3s ease-out;
-    }
+    } */
 }

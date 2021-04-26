@@ -1,31 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Raleway:wght@300;400&display=swap');
 /*===========================================
    BASE STYLES
 ============================================*/
 
-h1, h2, h3,h4, h5, h6 {
-    font-family: Montserrat;
+h1, h2, h4, h5, h6 {
+    font-family: Raleway;
 }
 
 p {
-    font-family: "PT Serif";
+    font-family: Raleway;
+    color: #999;
 }
 
 h1 {
     font-weight: 600;
 }
 
-h5 {
-    color: white;
+h3 {
+    font-family: "Cormorant Garamond";
+    font-style: italic;
+    text-transform: lowercase;
+    font-weight: 300;
+    font-size: 18px;
 }
+
 main {
     background-color: #fff;
 }
 
 h3 {
     color: #c7af98;
+    padding-bottom: 30px;
 }
 
 /*===========================================
@@ -36,9 +43,9 @@ h3 {
     color: #999;
     text-transform: uppercase;
     font-size: 14px;
+    font-family: Raleway;
 }
 
-.navbar-brand:hover,
 .nav-link:hover {
     color: #c7af98;
 }
@@ -53,15 +60,6 @@ nav {
     margin-left: 10px; 
 }
 
-.navbar-brand {
-    text-decoration: none;
-    color: #e9ccb1;
-    font-family: "PT Serif";
-}
-
-.navbar-brand:hover{
-    cursor: default;
-}
 
 ul {
     list-style-type: none;
@@ -72,11 +70,12 @@ ul {
 ============================================*/
 
 .intro {
-    background-image: url("../img/hero.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../img/hero.jpg");
     background-size: cover;
-    height:90vh;
-    padding-top: 200px;
-    color: #c7af98;
+    height:100vh;
+    text-align: center;
+    padding-top: 25%;
+    color: WHITE;
     background-color: #999;
     padding-left: 10px;
 }
@@ -86,36 +85,31 @@ ul {
 ============================================*/
 
 #about {
-    height: 60%;
+    height: 450px;
     color: #999;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    padding-top: 120px;
 }
 
 /*===========================================
    PROJECTS
 ============================================*/
 
-#projects {
-    padding-top: 12vh;
-    padding-bottom: 12vh;
-    height: 70%;
-    background-color: #c7af98;
-}
 
 #projects h3 {
     padding-bottom: 40px;
     font-weight: 400;
-    color: #fff;
+    color: #c7af98;
 }
 
 #projects h5 {
     padding-top: 20px;
+    color: #c7af98;
 }
 
-.work p {
-    color: #fff;
+.work-container .work {
+    padding-bottom: 40px;
 }
+
 
 #projects .submit {
     margin-right: 5px;
@@ -128,9 +122,8 @@ ul {
 ============================================*/
 
 #skills {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    height: 40%;
+    height: 450px;
+    padding-top: 120px;
 }
 
 .credits {
@@ -138,7 +131,7 @@ ul {
     line-height: 1px;
     font-style: italic;
     color: #c7af98;
-    margin-left: 10px;
+    padding-top: 30px;
 }
 
 .credits a {
@@ -171,8 +164,7 @@ img.svg {
 ============================================*/
 
 #connect {
-    background-color: #c7af98;
-    color: white;
+    color:#c7af98;
     padding-top: 10px;
     padding-bottom: 20px;
 }
@@ -181,41 +173,46 @@ img.svg {
     margin-top: 10px;
 }
 
-
-#connect p {
-    display: none;
-} 
-
 #connect img.svg {
     height: 50px;
     width: 50px;
 }
 
-.form-group label {
-    font-family: Montserrat;
+.form {
+    display: flex;
+    justify-content: center;
 }
 
-.form-group label,
-.form-group input,
-.form-group textarea {
-    margin: 5px;
+.form-section label,
+.form-section input,
+.form-section textarea {
+    margin: 7px;
+    font-family: Raleway;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .socials {
     display: flex;
     padding-bottom: 20px;
+    justify-content: center;
 }
 
 .submit {
     border-radius: 25px;
     padding: 5px 10px;
     margin-top: 10px;
-    background-color: white;
-    border: 2px solid;
-    color: #c7af98;
-    font-family: Montserrat;
+    background-color: #c7af98;
+    color: white;
+    font-family: Raleway;
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 18px;
+}
+
+#connect .submit {
+    border: none;
 }
 
 .submit:hover {
@@ -223,6 +220,15 @@ img.svg {
     color: white;
     border-color: #e9ccb1;
     transition: 0.1s ease-in;
+}
+
+input,
+textarea {
+    width: 284px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    box-shadow: none;
 }
 
 @media (max-width: 769px) {
@@ -271,5 +277,41 @@ img.svg {
    img.svg {
         height: 100px;
         width: 100px;
+    }
+
+    #about p {
+        width: 545px;
+        margin: 0 auto;
+    }
+
+    #about p, 
+    .form-section label {
+        font-size: 20px;
+    }
+
+    .work p {
+        font-size: 18px;
+    }
+
+    .work-container {
+        display: flex;
+        flex-wrap: wrap
+    }
+    .work-container .work {
+        width: 50%;
+        padding: 20px;
+    }
+
+    .left {
+        float: left;
+    }
+    
+    .right {
+        float: right;
+    }
+    
+    input,
+    textarea {
+        width: 350px;
     }
 }
